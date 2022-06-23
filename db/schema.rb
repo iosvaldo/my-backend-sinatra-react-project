@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_23_164915) do
+ActiveRecord::Schema.define(version: 2022_06_23_210731) do
 
   create_table "appointments", force: :cascade do |t|
     t.string "username"
     t.string "date"
     t.integer "service_id"
     t.integer "salon_id"
+    t.integer "likes"
   end
 
   create_table "salons", force: :cascade do |t|
@@ -26,7 +27,7 @@ ActiveRecord::Schema.define(version: 2022_06_23_164915) do
   end
 
   create_table "services", force: :cascade do |t|
-    t.string "appointment_type"
+    t.string "service"
   end
 
 end

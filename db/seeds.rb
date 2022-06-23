@@ -1,9 +1,9 @@
 puts "🌱 Seeding services..."
-s1 = Service.create(appointment_type: "Haircut")
-s2 = Service.create(appointment_type: "Manicute")
-s3 = Service.create(appointment_type: "Pedicure")
-s4 = Service.create(appointment_type: "Men's Haircut")
-s5 = Service.create(appointment_type: "Color Treatment")
+s1 = Service.create(service: "Haircut")
+s2 = Service.create(service: "Manicure")
+s3 = Service.create(service: "Pedicure")
+s4 = Service.create(service: "Men's Haircut")
+s5 = Service.create(service: "Color Treatment")
 
 puts "seeding salons"
 salon1 = Salon.create(name: "Placement name", address: "76 Star Street, New York, NY", phone_number: 6463849301)
