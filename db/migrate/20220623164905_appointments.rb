@@ -2,10 +2,9 @@ class Appointments < ActiveRecord::Migration[6.1]
   def change
     create_table :appointments do |t|
       t.string :username
-      t.datetime :date
-      t.string :appointment_type
+      t.string :date
+      t.integer :service_id
       t.integer :salon_id
-      t.integer :user_id
     end 
   end
 end
